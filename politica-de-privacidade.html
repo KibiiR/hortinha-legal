@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Hortinha</title>
+<meta name="robots" content="index, follow">
+<style>
+  :root {
+    --papel: #FBF7EF; --papel2: #EDE6D6; --linha: #E3DAC7;
+    --tinta: #17241B; --tinta2: #5C6B5E; --verde: #2F6B41;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--papel); color: var(--tinta);
+    font: 17px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    padding: 32px 20px 80px;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.2; margin-bottom: 8px; }
+  h2 { font-size: 21px; margin: 36px 0 10px; color: var(--verde); }
+  h3 { font-size: 17px; margin: 24px 0 6px; }
+  p, ul, ol, .rolar { margin-bottom: 14px; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin-bottom: 5px; }
+  a { color: var(--verde); }
+  code { background: var(--papel2); padding: 1px 5px; border-radius: 4px; font-size: 0.88em; }
+  hr { border: 0; border-top: 1px solid var(--linha); margin: 32px 0; }
+  blockquote {
+    border-left: 3px solid var(--linha); padding: 2px 0 2px 16px;
+    margin: 16px 0; color: var(--tinta2);
+  }
+  blockquote p:last-child { margin-bottom: 0; }
+  /* Uma tabela larga rola dentro da sua caixa; a página nunca rola de lado. */
+  .rolar { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+  th { background: var(--papel2); font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --papel: #141815; --papel2: #1E2420; --linha: #2E3832;
+      --tinta: #E6EAE7; --tinta2: #9BA79E; --verde: #7FC08F;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de Privacidade da Hortinha</h1>
+<p><strong>Última atualização:</strong> 11 de novembro de 2026</p>
+<hr>
+<h2>Quem é responsável pelos teus dados</h2>
+<p>A Hortinha é feita e mantida por <strong>Fábio Filipe da Silva Sousa</strong>, a título individual, em Portugal. É quem decide o que se recolhe e para quê — o responsável pelo tratamento, na linguagem do RGPD.</p>
+<p>Para qualquer questão sobre os teus dados, incluindo pedidos de acesso ou apagamento: <strong>hortinha.app@gmail.com</strong>. É por aqui que se fala connosco, e é o mesmo endereço que a ficha da Google Play mostra.</p>
+<h2>O que a Hortinha recolhe</h2>
+<p>Só o que precisa para funcionar. Não há publicidade, não há análise de comportamento, não há rastreio, e nada é vendido nem partilhado para fins comerciais.</p>
+<h3>Para teres uma conta</h3>
+<ul><li><strong>Endereço de email</strong> e <strong>palavra-passe.</strong> A palavra-passe nunca é guardada em texto: fica um resumo criptográfico irreversível, gerado pelo Supabase. Nós não lhe temos acesso, e não a conseguimos ver nem recuperar.</li></ul>
+<p>O email serve para te identificares, para confirmares a conta e para recuperares a palavra-passe. Não é usado para newsletters nem para nada que não tenhas pedido.</p>
+<h3>Para a app saber o tempo que faz no teu quintal</h3>
+<ul><li><strong>O nome do lugar que escolheste</strong>, e as respetivas <strong>latitude, longitude e altitude</strong>.</li></ul>
+<p>Estas coordenadas são as da <strong>localidade</strong> que escreveste e escolheste de uma lista — não são a posição do teu telemóvel. <strong>A Hortinha nunca pede a permissão de localização e não tem acesso ao GPS.</strong> Uma freguesia chega para saber se vai gear, e evita guardar onde tu estás.</p>
+<h3>Para a app ser uma horta e não um calendário</h3>
+<ul><li><strong>Canteiros:</strong> o nome que lhes deste, a exposição solar e a área.</li><li><strong>Plantações:</strong> que espécie, quando semeaste, quando transplantaste, quando colheste, quantas plantas, e as <strong>notas</strong> que escreveres.</li></ul>
+<p>As notas são texto livre e ficam como as escreveste. Não escrevas aí nada que não queiras guardar.</p>
+<h3>No teu telemóvel</h3>
+<p>A app guarda no armazenamento local do dispositivo a <strong>última resposta boa</strong> de cada consulta, para continuar a servir para alguma coisa quando não há rede. Sai tudo quando terminas sessão ou desinstalas a app.</p>
+<h2>O que a Hortinha <em>não</em> recolhe</h2>
+<ul><li>Não acede ao GPS, à câmara, aos contactos, aos ficheiros nem ao microfone.</li><li>Não recolhe identificadores de publicidade nem constrói perfis.</li><li>Não usa cookies de rastreio nem ferramentas de análise de utilização.</li><li>Não sabe que outras apps tens instaladas.</li><li>Não recolhe dados de crianças. A conta é de um adulto; se a usares ao lado de um filho, nada sobre ele é pedido nem guardado.</li></ul>
+<h2>Onde ficam os teus dados</h2>
+<p>Na infraestrutura da <strong>Supabase</strong>, alojada na <strong>União Europeia (Irlanda)</strong>. A Supabase é subcontratante e trata os dados por nossa conta.</p>
+<p>O isolamento entre contas é feito na própria base de dados, com <em>Row Level Security</em> do PostgreSQL: cada linha está presa ao seu dono e as consultas de uma pessoa não conseguem alcançar as linhas de outra.</p>
+<h2>Com quem são partilhados</h2>
+<p>Com dois serviços, e apenas o estritamente necessário:</p>
+<div class="rolar"><table><thead><tr><th>Serviço</th><th>O que recebe</th><th>Para quê</th></tr></thead><tbody><tr><td><strong>Supabase</strong> (Irlanda, UE)</td><td>tudo o que está acima</td><td>alojamento, contas e base de dados</td></tr><tr><td><strong>Open-Meteo</strong> (Alemanha)</td><td>a <strong>latitude e longitude</strong> do lugar, e o <strong>texto</strong> que escreves ao procurar uma localidade</td><td>previsão do tempo e pesquisa de lugares</td></tr></tbody></table></div>
+<p>O Open-Meteo recebe coordenadas sem qualquer identificador teu: não sabe de quem são, nem recebe o teu email nem o teu identificador de conta.</p>
+<p>Mais ninguém. Sem anunciantes, sem corretores de dados, sem redes sociais.</p>
+<h2>Com que fundamento</h2>
+<p>Ao abrigo do RGPD:</p>
+<ul><li><strong>Execução do contrato</strong> (art. 6.º, n.º 1, alínea b): a conta, o lugar e os registos da horta são o que a app é. Sem eles não há serviço a prestar.</li><li><strong>Interesse legítimo</strong> (alínea f): guardar registos técnicos mínimos para manter o serviço a funcionar e seguro.</li></ul>
+<p>Não tratamos dados com base em consentimento para publicidade, porque não há publicidade.</p>
+<h2>Quanto tempo ficam</h2>
+<p>Enquanto tiveres conta. Podes apagá-la tu, dentro da app, em <strong>A tua conta → Apagar a conta</strong>: a conta e tudo o que lhe está associado — lugares, canteiros, plantações e notas — saem da base nesse momento. Se preferires pedir por email, fazemo-lo em <strong>até 30 dias</strong>. Em qualquer dos casos não fica cópia guardada para além do prazo técnico das cópias de segurança da Supabase. O passo a passo está em <a href="apagar-conta.html" rel="noopener">Apagar a conta</a>.</p>
+<p>Os registos meteorológicos ficam associados ao lugar e desaparecem com ele.</p>
+<h2>Os teus direitos</h2>
+<p>Podes, a qualquer momento e sem justificar:</p>
+<ul><li><strong>Aceder</strong> aos teus dados e receber uma cópia em formato legível;</li><li><strong>Corrigir</strong> o que estiver errado;</li><li><strong>Apagar</strong> a conta e tudo o que lhe pertence;</li><li><strong>Levar os dados</strong> para outro serviço (portabilidade);</li><li><strong>Opor-te</strong> a um tratamento ou pedir que seja limitado;</li><li><strong>Reclamar</strong> junto da <strong>Comissão Nacional de Proteção de Dados</strong> (<a href="https://www.cnpd.pt" rel="noopener">cnpd.pt</a>).</li></ul>
+<p>Escreve para <strong>hortinha.app@gmail.com</strong>. Respondemos no prazo máximo de um mês.</p>
+<h2>Crianças</h2>
+<p>A Hortinha foi pensada para um adulto usar no quintal, muitas vezes ao lado de uma criança pequena. <strong>A conta é do adulto.</strong> Não pedimos, não recolhemos e não guardamos dados sobre crianças, e a app não tem qualquer funcionalidade que lhes seja dirigida — não há chat, não há perfis, não há partilha, e não há nada que possa ser publicado.</p>
+<h2>Segurança</h2>
+<ul><li>Todo o tráfego vai cifrado por HTTPS.</li><li>As palavras-passe ficam apenas como resumo criptográfico irreversível.</li><li>O isolamento entre contas é imposto pela base de dados, não pelo código da app.</li><li>As chaves com privilégios elevados nunca são incluídas na aplicação: vivem só do lado do servidor.</li></ul>
+<p>Nenhum sistema é infalível. Se acontecer uma violação de dados que te ponha em risco, avisamos-te e à CNPD nos prazos que a lei manda.</p>
+<h2>Alterações</h2>
+<p>Se esta política mudar de forma relevante, a data no topo muda e avisamos-te dentro da app antes de a alteração produzir efeitos.</p>
+<h2>Créditos</h2>
+<p>Meteorologia e pesquisa de lugares: <a href="https://open-meteo.com/" rel="noopener">Open-Meteo</a>. Fotografias: <a href="https://commons.wikimedia.org/" rel="noopener">Wikimedia Commons</a>, cada uma com o seu autor e licença indicados na ficha da espécie.</p>
+</main>
+</body>
+</html>
